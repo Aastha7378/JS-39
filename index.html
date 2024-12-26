@@ -44,6 +44,16 @@
         .current-player{
             text-align: center;
         }
+        .btn{
+            display: block;
+            margin: 0 auto;
+            background-color:#660000 ;
+            color: white;
+            height: 30px;
+            width: 100px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +79,8 @@
     <div class="box" onclick="selectBox(8)">8</div>
   </div>
 </div>
+
+<button class="btn">Reset Game</button>
     
 <script>
     const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1 ];
