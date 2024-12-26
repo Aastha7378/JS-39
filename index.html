@@ -35,28 +35,49 @@
 </head>
 <body>
   <h1 class="Title"> Tic Tac Toe</h1>
+
 <div class="board">
   <div class="row">
+    <div class="box">0</div>
     <div class="box">1</div>
     <div class="box">2</div>
-    <div class="box">3</div>
   </div>
 
   <div class="row">
+    <div class="box">3</div>
     <div class="box">4</div>
     <div class="box">5</div>
-    <div class="box">6</div>
   </div>
 
   <div class="row">
+    <div class="box">6</div>
     <div class="box">7</div>
     <div class="box">8</div>
-    <div class="box">9</div>
   </div>
 </div>
     
 <script>
-    
-</script>
-</body>
-</html>
+    const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1 ];
+
+    function renderBoard(){
+        
+        const allBoxes = document.querySelectorAll('.box');
+
+        allBoxes.forEach((boxElement, i)=>{
+            if(board[i]==='x'){
+                boxElement.innerHTML = 'x';
+            }
+            else if (board[i]==='o'){
+                boxElement.innerHTML = 'o';
+            }
+            else{
+                boxElement.innerHTML = '';
+            }
+        })
+    }
+         
+        renderBoard();
+    </script>
+    </body>
+    </html>
+
